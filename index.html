@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Williams Ngo — Business Analyst &amp; BI Analyst | Melbourne</title>
+<meta name="description" content="Williams Ngo (Hua Quoc Thinh Ngo) — Business Analyst & Business Intelligence Analyst based in Melbourne. Retail, e-commerce and supply-chain domain depth, with SQL, Power BI, Tableau and Azure." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#FAF8F3;
+    --paper-2:#F3EFE7;
+    --ink:#17212B;
+    --muted:#5B6B72;
+    --petrol:#123A47;
+    --petrol-2:#0D2B34;
+    --amber:#D0871F;
+    --amber-soft:#F3E4CB;
+    --line:#E4DDD0;
+    --line-strong:#CBC2B2;
+    --white:#FFFFFF;
+    --shadow:0 1px 2px rgba(18,58,71,.05), 0 12px 30px -12px rgba(18,58,71,.18);
+    --serif:"Fraunces",Georgia,serif;
+    --sans:"Inter",system-ui,sans-serif;
+    --mono:"JetBrains Mono",ui-monospace,monospace;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;background:var(--paper);color:var(--ink);
+    font-family:var(--sans);font-size:17px;line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+  }
+  a{color:inherit;}
+  img{max-width:100%;display:block;}
+  .wrap{max-width:1140px;margin:0 auto;padding:0 28px;}
+  .mono{font-family:var(--mono);}
+  .eyebrow{
+    font-family:var(--mono);font-size:12px;letter-spacing:.16em;text-transform:uppercase;
+    color:var(--amber);font-weight:600;margin:0 0 14px;display:flex;align-items:center;gap:10px;
+  }
+  .eyebrow::before{content:"";width:26px;height:1px;background:var(--amber);display:inline-block;}
+  h1,h2,h3{font-family:var(--serif);font-weight:600;line-height:1.08;margin:0;}
+  .btn{
+    display:inline-flex;align-items:center;gap:8px;font-family:var(--sans);font-size:14px;font-weight:600;
+    padding:12px 20px;border-radius:2px;border:1px solid var(--ink);cursor:pointer;text-decoration:none;
+    background:var(--ink);color:var(--paper);transition:transform .18s ease, background .18s ease, color .18s ease;
+  }
+  .btn:hover{transform:translateY(-2px);background:var(--petrol);border-color:var(--petrol);}
+  .btn.ghost{background:transparent;color:var(--ink);border-color:var(--line-strong);}
+  .btn.ghost:hover{background:var(--ink);color:var(--paper);border-color:var(--ink);}
+  .btn.small{padding:8px 14px;font-size:13px;}
+
+  /* ---------- Header ---------- */
+  header{
+    position:sticky;top:0;z-index:60;background:rgba(250,248,243,.86);
+    backdrop-filter:blur(10px);border-bottom:1px solid var(--line);
+  }
+  .nav{display:flex;align-items:center;justify-content:space-between;height:64px;}
+  .brand{display:flex;align-items:center;gap:11px;text-decoration:none;font-weight:700;}
+  .monogram{
+    width:34px;height:34px;border-radius:2px;background:var(--petrol);color:var(--paper);
+    font-family:var(--serif);font-weight:600;display:grid;place-items:center;font-size:15px;letter-spacing:.5px;
+  }
+  .brand b{font-family:var(--sans);font-size:15px;letter-spacing:.01em;}
+  .brand span{font-family:var(--mono);font-size:11px;color:var(--muted);display:block;letter-spacing:.04em;font-weight:500;}
+  .nav-links{display:flex;align-items:center;gap:28px;}
+  .nav-links a{font-size:14px;text-decoration:none;color:var(--muted);font-weight:500;transition:color .15s;}
+  .nav-links a:hover{color:var(--ink);}
+  .nav-cta{display:flex;align-items:center;gap:14px;}
+  .iconlink{color:var(--muted);display:grid;place-items:center;transition:color .15s;}
+  .iconlink:hover{color:var(--petrol);}
+  .burger{display:none;background:none;border:0;cursor:pointer;padding:6px;}
+  .burger span{display:block;width:22px;height:2px;background:var(--ink);margin:4px 0;transition:.2s;}
+
+  /* ---------- Hero ---------- */
+  .hero{padding:84px 0 64px;border-bottom:1px solid var(--line);position:relative;overflow:hidden;}
+  .hero-grid{display:grid;grid-template-columns:1.25fr .9fr;gap:56px;align-items:center;}
+  .hero h1{font-size:clamp(40px,6vw,68px);letter-spacing:-.015em;}
+  .hero h1 em{font-style:italic;color:var(--petrol);}
+  .hero .lead{font-size:19px;color:var(--muted);max-width:42ch;margin:22px 0 10px;}
+  .availability{
+    font-family:var(--mono);font-size:12.5px;color:var(--ink);display:inline-flex;align-items:center;gap:9px;
+    margin:18px 0 28px;padding:7px 13px;background:var(--white);border:1px solid var(--line);border-radius:2px;
+  }
+  .dot{width:8px;height:8px;border-radius:50%;background:#2FA37C;box-shadow:0 0 0 3px rgba(47,163,124,.18);}
+  .hero-cta{display:flex;gap:14px;flex-wrap:wrap;}
+
+  /* Data readout signature panel */
+  .readout{
+    background:var(--petrol);color:var(--paper);border-radius:4px;padding:26px 26px 8px;
+    box-shadow:var(--shadow);position:relative;
+  }
+  .readout::before{
+    content:"// IMPACT_READOUT";position:absolute;top:-10px;left:18px;background:var(--amber);color:var(--petrol-2);
+    font-family:var(--mono);font-size:10.5px;font-weight:600;letter-spacing:.12em;padding:3px 9px;border-radius:2px;
+  }
+  .stat{display:flex;align-items:baseline;justify-content:space-between;gap:14px;padding:15px 0;border-bottom:1px dashed rgba(250,248,243,.22);}
+  .stat:last-child{border-bottom:0;}
+  .stat .num{font-family:var(--serif);font-size:33px;font-weight:600;line-height:1;}
+  .stat .num .unit{font-size:18px;color:var(--amber);}
+  .stat .lbl{font-family:var(--mono);font-size:11.5px;text-align:right;color:rgba(250,248,243,.78);letter-spacing:.03em;max-width:17ch;}
+
+  /* ---------- Section frame ---------- */
+  section{padding:84px 0;}
+  .sec-head{max-width:62ch;margin-bottom:44px;}
+  .sec-head h2{font-size:clamp(28px,3.6vw,40px);letter-spacing:-.01em;}
+  .sec-head p{color:var(--muted);font-size:17px;margin:16px 0 0;}
+
+  /* ---------- What I do ---------- */
+  .cap{background:var(--paper-2);}
+  .caps{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;}
+  .cap-card{background:var(--white);border:1px solid var(--line);border-radius:4px;padding:28px;transition:transform .2s,border-color .2s;}
+  .cap-card:hover{transform:translateY(-3px);border-color:var(--line-strong);}
+  .cap-card .code{font-family:var(--mono);font-size:12px;color:var(--amber);font-weight:600;letter-spacing:.08em;}
+  .cap-card h3{font-size:22px;margin:10px 0 10px;}
+  .cap-card p{color:var(--muted);font-size:15px;margin:0 0 16px;}
+  .tags{display:flex;flex-wrap:wrap;gap:6px;}
+  .tag{font-family:var(--mono);font-size:11px;color:var(--petrol);background:var(--paper-2);border:1px solid var(--line);
+       padding:4px 9px;border-radius:2px;letter-spacing:.02em;}
+
+  /* ---------- Projects ---------- */
+  .filters{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:34px;}
+  .filter{font-family:var(--mono);font-size:12.5px;font-weight:500;letter-spacing:.03em;color:var(--muted);
+    background:transparent;border:1px solid var(--line-strong);padding:8px 15px;border-radius:2px;cursor:pointer;transition:.16s;}
+  .filter:hover{color:var(--ink);border-color:var(--ink);}
+  .filter.active{background:var(--ink);color:var(--paper);border-color:var(--ink);}
+  .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;}
+  .card{
+    background:var(--white);border:1px solid var(--line);border-radius:4px;padding:24px;display:flex;flex-direction:column;
+    transition:transform .2s,border-color .2s,box-shadow .2s;min-height:248px;
+  }
+  .card:hover{transform:translateY(-4px);border-color:var(--line-strong);box-shadow:var(--shadow);}
+  .card-top{display:flex;align-items:center;justify-content:space-between;margin-bottom:14px;}
+  .pcode{font-family:var(--mono);font-size:11px;font-weight:600;letter-spacing:.1em;color:var(--paper);
+    background:var(--petrol);padding:4px 8px;border-radius:2px;}
+  .pcode.ba{background:#3F5A3C;}
+  .pcode.rg{background:#6B3F3F;}
+  .cat-pill{font-family:var(--mono);font-size:10.5px;color:var(--muted);letter-spacing:.04em;}
+  .card h3{font-size:20px;line-height:1.15;margin-bottom:8px;}
+  .card p{color:var(--muted);font-size:14.5px;margin:0 0 16px;flex:1;}
+  .card-actions{display:flex;gap:10px;align-items:center;margin-top:auto;}
+  .link-cta{font-family:var(--sans);font-weight:600;font-size:13.5px;color:var(--ink);background:none;border:0;cursor:pointer;
+    padding:0;display:inline-flex;align-items:center;gap:6px;border-bottom:2px solid var(--amber);line-height:1.4;transition:gap .15s;}
+  .link-cta:hover{gap:10px;}
+  .gh{display:inline-flex;align-items:center;gap:6px;font-family:var(--mono);font-size:12px;color:var(--muted);text-decoration:none;
+    margin-left:auto;border:1px solid var(--line);padding:6px 10px;border-radius:2px;transition:.16s;}
+  .gh:hover{color:var(--ink);border-color:var(--ink);}
+
+  /* ---------- Modal ---------- */
+  .modal-back{position:fixed;inset:0;background:rgba(13,43,52,.55);backdrop-filter:blur(3px);z-index:100;
+    display:none;align-items:flex-start;justify-content:center;padding:5vh 20px;overflow-y:auto;}
+  .modal-back.open{display:flex;}
+  .modal{background:var(--paper);max-width:720px;width:100%;border-radius:6px;padding:38px 40px 40px;position:relative;
+    box-shadow:0 30px 80px -20px rgba(13,43,52,.5);animation:rise .28s ease;}
+  @keyframes rise{from{opacity:0;transform:translateY(16px);}to{opacity:1;transform:translateY(0);}}
+  .modal .close{position:absolute;top:18px;right:18px;background:none;border:1px solid var(--line-strong);border-radius:2px;
+    width:34px;height:34px;cursor:pointer;font-size:18px;color:var(--muted);line-height:1;transition:.16s;}
+  .modal .close:hover{background:var(--ink);color:var(--paper);border-color:var(--ink);}
+  .modal .m-code{font-family:var(--mono);font-size:12px;color:var(--amber);font-weight:600;letter-spacing:.08em;}
+  .modal h3{font-size:28px;margin:8px 0 6px;}
+  .modal .m-tools{display:flex;flex-wrap:wrap;gap:6px;margin:14px 0 22px;}
+  .m-block{margin:0 0 18px;}
+  .m-block .h{font-family:var(--mono);font-size:11.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--petrol);font-weight:600;margin-bottom:5px;}
+  .m-block p{margin:0;color:var(--ink);font-size:15.5px;}
+  .m-block.out{background:var(--white);border:1px solid var(--line);border-left:3px solid var(--amber);padding:14px 16px;border-radius:2px;}
+  .modal .m-actions{margin-top:24px;display:flex;gap:12px;flex-wrap:wrap;}
+
+  /* ---------- Experience ---------- */
+  .exp{background:var(--petrol);color:var(--paper);}
+  .exp .eyebrow{color:var(--amber);}
+  .exp .sec-head h2{color:var(--paper);}
+  .exp .sec-head p{color:rgba(250,248,243,.72);}
+  .timeline{display:grid;gap:0;border-top:1px solid rgba(250,248,243,.18);}
+  .job{display:grid;grid-template-columns:200px 1fr;gap:30px;padding:28px 0;border-bottom:1px solid rgba(250,248,243,.18);}
+  .job .when{font-family:var(--mono);font-size:12.5px;color:var(--amber);letter-spacing:.02em;padding-top:4px;}
+  .job .where{font-family:var(--mono);font-size:11.5px;color:rgba(250,248,243,.62);margin-top:6px;}
+  .job h3{font-size:22px;color:var(--paper);margin-bottom:4px;}
+  .job .role{font-style:italic;font-family:var(--serif);color:rgba(250,248,243,.85);margin-bottom:12px;font-size:16px;}
+  .job ul{margin:0;padding-left:18px;color:rgba(250,248,243,.84);font-size:15px;}
+  .job ul li{margin-bottom:6px;}
+  .edu-cert{display:grid;grid-template-columns:1fr 1fr;gap:30px;margin-top:42px;}
+  .panel{background:rgba(250,248,243,.05);border:1px solid rgba(250,248,243,.16);border-radius:4px;padding:24px;}
+  .panel h4{font-family:var(--mono);font-size:11.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--amber);margin:0 0 16px;font-weight:600;}
+  .panel .deg{color:var(--paper);font-weight:600;font-size:16px;}
+  .panel .deg small{display:block;font-family:var(--mono);font-size:11.5px;color:rgba(250,248,243,.6);font-weight:400;margin-top:3px;}
+  .panel .gpa{color:var(--amber);font-family:var(--mono);font-size:12.5px;}
+  .panel ul{margin:14px 0 0;padding-left:16px;color:rgba(250,248,243,.82);font-size:14px;}
+  .panel ul li{margin-bottom:6px;}
+  .edu-item{padding:14px 0;border-bottom:1px dashed rgba(250,248,243,.16);}
+  .edu-item:last-child{border-bottom:0;}
+
+  /* ---------- About ---------- */
+  .about-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:54px;align-items:start;}
+  .about-card{background:var(--white);border:1px solid var(--line);border-radius:4px;padding:30px;box-shadow:var(--shadow);}
+  .big-mono{width:96px;height:96px;border-radius:4px;background:var(--petrol);color:var(--paper);font-family:var(--serif);
+    font-size:36px;font-weight:600;display:grid;place-items:center;margin-bottom:20px;letter-spacing:1px;}
+  .about-card .field{display:flex;justify-content:space-between;gap:14px;padding:11px 0;border-bottom:1px dashed var(--line);font-size:14px;}
+  .about-card .field:last-child{border-bottom:0;}
+  .about-card .field .k{font-family:var(--mono);font-size:11.5px;color:var(--muted);letter-spacing:.04em;}
+  .about-card .field .v{font-weight:500;text-align:right;}
+  .about-text p{margin:0 0 18px;color:var(--ink);}
+  .about-text p:first-child{font-family:var(--serif);font-size:21px;line-height:1.45;color:var(--petrol);}
+
+  /* ---------- Contact ---------- */
+  .contact{background:var(--paper-2);text-align:center;}
+  .contact h2{font-size:clamp(32px,5vw,52px);max-width:18ch;margin:0 auto 18px;letter-spacing:-.01em;}
+  .contact .lead{color:var(--muted);max-width:48ch;margin:0 auto 30px;}
+  .contact-row{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-bottom:34px;}
+  .channels{display:flex;gap:30px;justify-content:center;flex-wrap:wrap;font-family:var(--mono);font-size:13px;}
+  .channels a{color:var(--muted);text-decoration:none;display:inline-flex;align-items:center;gap:8px;transition:.15s;}
+  .channels a:hover{color:var(--petrol);}
+
+  footer{border-top:1px solid var(--line);padding:28px 0;}
+  .foot{display:flex;justify-content:space-between;align-items:center;gap:18px;flex-wrap:wrap;
+    font-family:var(--mono);font-size:12px;color:var(--muted);}
+
+  .reveal{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s ease;}
+  .reveal.in{opacity:1;transform:none;}
+
+  /* ---------- Responsive ---------- */
+  @media(max-width:900px){
+    .hero-grid{grid-template-columns:1fr;gap:38px;}
+    .caps,.grid{grid-template-columns:repeat(2,1fr);}
+    .about-grid{grid-template-columns:1fr;gap:34px;}
+    .edu-cert{grid-template-columns:1fr;}
+    .job{grid-template-columns:1fr;gap:8px;}
+    .job .when{padding-top:0;}
+  }
+  @media(max-width:640px){
+    body{font-size:16px;}
+    .wrap{padding:0 20px;}
+    .nav-links{display:none;}
+    .burger{display:block;}
+    .nav-links.show{display:flex;position:absolute;top:64px;left:0;right:0;flex-direction:column;gap:0;
+      background:var(--paper);border-bottom:1px solid var(--line);padding:8px 20px 16px;}
+    .nav-links.show a{padding:11px 0;border-bottom:1px solid var(--line);width:100%;}
+    .caps,.grid{grid-template-columns:1fr;}
+    section{padding:60px 0;}
+    .hero{padding:54px 0 48px;}
+    .modal{padding:30px 22px 30px;}
+    .nav-cta .btn{display:none;}
+  }
+  @media(prefers-reduced-motion:reduce){
+    *{scroll-behavior:auto;}
+    .reveal{opacity:1;transform:none;transition:none;}
+    .btn:hover,.card:hover,.cap-card:hover{transform:none;}
+  }
+  :focus-visible{outline:2px solid var(--amber);outline-offset:2px;}
+</style>
+</head>
+<body>
+
+<!-- ============ HEADER ============ -->
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#top" aria-label="Williams Ngo home">
+      <span class="monogram">WN</span>
+      <span><b>Williams Ngo</b><span>Business Analyst · BI Analyst</span></span>
+    </a>
+    <nav class="nav-links" id="navlinks">
+      <a href="#work">Projects</a>
+      <a href="#experience">Experience</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="nav-cta">
+      <a class="iconlink" id="ghTop" href="https://github.com/williams-ngo" target="_blank" rel="noopener" aria-label="GitHub" title="GitHub">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.7.5.5 5.7.5 12c0 5.1 3.3 9.4 7.9 10.9.6.1.8-.2.8-.5v-2c-3.2.7-3.9-1.4-3.9-1.4-.5-1.3-1.3-1.7-1.3-1.7-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.7 1.3 3.4 1 .1-.8.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.8 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0C17.3 4.7 18.3 5 18.3 5c.6 1.6.2 2.8.1 3.1.8.8 1.2 1.8 1.2 3.1 0 4.5-2.7 5.5-5.3 5.8.4.4.8 1.1.8 2.2v3.3c0 .3.2.6.8.5 4.6-1.5 7.9-5.8 7.9-10.9C23.5 5.7 18.3.5 12 .5z"/></svg>
+      </a>
+      <a class="iconlink" id="liTop" href="https://linkedin.com/in/hua-quoc-thinh-ngo-713b42232" target="_blank" rel="noopener" aria-label="LinkedIn" title="LinkedIn">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.13 1.45-2.13 2.94v5.67H9.35V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.07 2.07 0 1 1 0-4.14 2.07 2.07 0 0 1 0 4.14zM7.12 20.45H3.55V9h3.57v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.22.79 24 1.77 24h20.45c.98 0 1.78-.78 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg>
+      </a>
+      <a class="btn small" href="CV_Williams_Ngo_BA_BI_Harvard.pdf" download>Download CV</a>
+    </div>
+    <button class="burger" id="burger" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<a id="top"></a>
+
+<!-- ============ HERO ============ -->
+<section class="hero" style="padding-top:84px">
+  <div class="wrap hero-grid">
+    <div class="reveal">
+      <p class="eyebrow">Business Analyst / BI Analyst — Melbourne</p>
+      <h1>I turn retail &amp; supply-chain data into <em>decisions.</em></h1>
+      <p class="lead">Final-semester Master of Business Information Technology at RMIT, with hands-on experience as an embedded business analyst across large-scale e-commerce operations — bridging stakeholders, systems and data.</p>
+      <span class="availability"><span class="dot"></span> Open to graduate / internship roles · Melbourne, VIC</span>
+      <div class="hero-cta">
+        <a class="btn" href="#work">View projects</a>
+        <a class="btn ghost" href="#contact">Get in touch</a>
+      </div>
+    </div>
+    <div class="reveal readout" aria-label="Impact summary">
+      <div class="stat"><span class="num">3<span class="unit">&times;</span></span><span class="lbl">order throughput — 1,000 to 3,000 orders/day</span></div>
+      <div class="stat"><span class="num">9<span class="unit">%</span></span><span class="lbl">reduction in total order errors</span></div>
+      <div class="stat"><span class="num">300<span class="unit">+</span></span><span class="lbl">staff trained on new systems</span></div>
+      <div class="stat"><span class="num">9</span><span class="lbl">BA &amp; BI projects shipped</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ WHAT I DO ============ -->
+<section class="cap" id="capabilities">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <p class="eyebrow">What I do</p>
+      <h2>Three ways I move work forward</h2>
+      <p>From eliciting requirements to shipping a dashboard — I work across the full lifecycle, with domain depth in retail, e-commerce and supply chain.</p>
+    </div>
+    <div class="caps">
+      <div class="cap-card reveal">
+        <span class="code">01 — ANALYSIS</span>
+        <h3>Business Analysis</h3>
+        <p>Translate stakeholder needs into BRDs, user stories and AS-IS/TO-BE process flows that teams can build from.</p>
+        <div class="tags"><span class="tag">BRD/SRS</span><span class="tag">User Stories</span><span class="tag">UML</span><span class="tag">Process Mapping</span><span class="tag">UAT</span></div>
+      </div>
+      <div class="cap-card reveal">
+        <span class="code">02 — INSIGHT</span>
+        <h3>Business Intelligence</h3>
+        <p>Model data and build dashboards that turn raw operations into KPIs people actually use to decide.</p>
+        <div class="tags"><span class="tag">SQL</span><span class="tag">Power BI</span><span class="tag">Tableau</span><span class="tag">Azure</span><span class="tag">Excel</span></div>
+      </div>
+      <div class="cap-card reveal">
+        <span class="code">03 — DELIVERY</span>
+        <h3>Project &amp; Delivery</h3>
+        <p>Plan, sequence and govern delivery in Agile — keeping scope, risk and stakeholders aligned to the goal.</p>
+        <div class="tags"><span class="tag">Agile/Scrum</span><span class="tag">Jira</span><span class="tag">MS Project</span><span class="tag">Confluence</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PROJECTS ============ -->
+<section id="work">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <p class="eyebrow">Selected work</p>
+      <h2>Nine projects across the BA &amp; BI lifecycle</h2>
+      <p>Filter by discipline. Open any project for the problem, the approach, the artifacts produced, and the outcome.</p>
+    </div>
+    <div class="filters reveal" id="filters">
+      <button class="filter active" data-f="all">All · 9</button>
+      <button class="filter" data-f="bi">BI &amp; Data · 4</button>
+      <button class="filter" data-f="ba">BA &amp; Delivery · 3</button>
+      <button class="filter" data-f="rg">Risk &amp; Governance · 2</button>
+    </div>
+    <div class="grid" id="grid"><!-- cards injected by JS --></div>
+  </div>
+</section>
+
+<!-- ============ EXPERIENCE ============ -->
+<section class="exp" id="experience">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <p class="eyebrow">Experience &amp; education</p>
+      <h2>Where I've done the work</h2>
+    </div>
+    <div class="timeline reveal">
+      <div class="job">
+        <div>
+          <div class="when">Aug 2023 – Feb 2025</div>
+          <div class="where">LOTTE Mart · Vietnam</div>
+        </div>
+        <div>
+          <h3>Online Operations Supervisor / Business Analyst</h3>
+          <div class="role">E-commerce · Digital Transformation</div>
+          <ul>
+            <li>Embedded BA across OMS, DMS, CRM, POS and Web/App systems for 14 nationwide online stores.</li>
+            <li>Elicited requirements from 40+ stakeholders into BRDs, user stories and AS-IS/TO-BE flows.</li>
+            <li>Scaled throughput 3× (1,000→3,000 orders/day); cut order errors 9%; halved processing time.</li>
+            <li>Built Power BI &amp; Excel dashboards; led UAT and trained 300+ staff on new systems.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="job">
+        <div>
+          <div class="when">Sep 2022 – Feb 2023</div>
+          <div class="where">Thea Delight · Vietnam</div>
+        </div>
+        <div>
+          <h3>Supply Chain Intern</h3>
+          <div class="role">Inventory &amp; Demand Planning</div>
+          <ul>
+            <li>Analysed inventory, sales and logistics data for KPI tracking and demand–supply planning.</li>
+            <li>Coordinated inventory flow across suppliers, warehouse and 3PL partners.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="job">
+        <div>
+          <div class="when">Mar 2022 – Sep 2022</div>
+          <div class="where">Kyanon Digital · Vietnam</div>
+        </div>
+        <div>
+          <h3>Business Development Intern</h3>
+          <div class="role">Low-code &amp; Digital Onboarding</div>
+          <ul>
+            <li>Supported the Mendix low-code sales pipeline and digitised client onboarding processes.</li>
+            <li>Identified business leads and conducted opportunity assessments.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="edu-cert">
+      <div class="panel reveal">
+        <h4>Education</h4>
+        <div class="edu-item">
+          <div class="deg">Master of Business, Information Technology <small>RMIT University, Melbourne · Feb 2025 – Feb 2027 (expected)</small></div>
+          <div class="gpa">GPA 3.4 / 4.0 · Final semester</div>
+        </div>
+        <div class="edu-item">
+          <div class="deg">Bachelor of Logistics &amp; Supply Chain Management <small>RMIT University, Vietnam · Oct 2019 – Apr 2024</small></div>
+          <div style="color:rgba(250,248,243,.7);font-size:13.5px;font-family:var(--mono)">Minor: International Business &amp; Digital Marketing</div>
+        </div>
+      </div>
+      <div class="panel reveal">
+        <h4>Certifications &amp; Development</h4>
+        <ul>
+          <li>Advanced Excel &amp; Supply Chain Analysis</li>
+          <li>Lean Six Sigma — White Belt</li>
+          <li>ACCA F3 — Financial Accounting</li>
+          <li>Export–Import Logistics (Incoterms 2020)</li>
+          <li><em>In progress:</em> Power BI (PL-300) &amp; Tableau · Google × Kaggle 5-Day AI Hackathon</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section id="about">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <p class="eyebrow">About</p>
+      <h2>Supply chain background, business-IT mindset</h2>
+    </div>
+    <div class="about-grid">
+      <div class="about-card reveal">
+        <div class="big-mono">WN</div>
+        <div class="field"><span class="k">NAME</span><span class="v">Hua Quoc Thinh, Ngo</span></div>
+        <div class="field"><span class="k">BASED</span><span class="v">Melbourne, VIC</span></div>
+        <div class="field"><span class="k">FOCUS</span><span class="v">Business / BI Analyst</span></div>
+        <div class="field"><span class="k">DOMAIN</span><span class="v">Retail · E-commerce · Supply Chain</span></div>
+        <div class="field"><span class="k">LANGUAGES</span><span class="v">English · Vietnamese</span></div>
+      </div>
+      <div class="about-text reveal">
+        <p>I started in logistics and supply chain, then moved into business IT — and the combination is the point.</p>
+        <p>At LOTTE Mart I sat between operations, IT and finance as an embedded business analyst, turning the messy reality of a 14-store e-commerce operation into requirements, automated workflows and dashboards. That meant real systems (OMS, DMS, CRM), real integrations (payment gateways, 3PL partners) and real outcomes — tripling daily throughput while cutting errors.</p>
+        <p>Now, in my Master of Business Information Technology at RMIT Melbourne, I'm pairing that domain depth with modern BI tooling — SQL, Power BI, Tableau and Azure — across nine projects spanning analysis, intelligence, delivery and risk. I like problems where understanding the business and understanding the data are the same job.</p>
+        <p>Outside the work, I mentor postgraduate peers at RMIT and help run student analytics and finance communities.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section class="contact" id="contact">
+  <div class="wrap">
+    <p class="eyebrow reveal" style="justify-content:center">Contact</p>
+    <h2 class="reveal">Let's talk about turning your data into decisions.</h2>
+    <p class="lead reveal">Open to Business Analyst and Business Intelligence roles — graduate, junior or internship — across Melbourne and Victoria.</p>
+    <div class="contact-row reveal">
+      <a class="btn" href="mailto:quocthinh231021@gmail.com">Email me</a>
+      <a class="btn ghost" href="CV_Williams_Ngo_BA_BI_Harvard.pdf" download>Download CV</a>
+    </div>
+    <div class="channels reveal">
+      <a href="mailto:quocthinh231021@gmail.com">✉ quocthinh231021@gmail.com</a>
+      <a href="https://linkedin.com/in/hua-quoc-thinh-ngo-713b42232" target="_blank" rel="noopener">in / LinkedIn</a>
+      <a id="ghBottom" href="https://github.com/williams-ngo" target="_blank" rel="noopener">⌥ GitHub</a>
+      <span>◴ Melbourne, VIC</span>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap foot">
+    <span>© <span id="yr"></span> Hua Quoc Thinh, Ngo (Williams Ngo)</span>
+    <span>Built as a static site · deploy-ready for GitHub Pages</span>
+  </div>
+</footer>
+
+<!-- ============ MODAL ============ -->
+<div class="modal-back" id="modalBack" role="dialog" aria-modal="true" aria-labelledby="mTitle">
+  <div class="modal">
+    <button class="close" id="modalClose" aria-label="Close">×</button>
+    <span class="m-code" id="mCode"></span>
+    <h3 id="mTitle"></h3>
+    <div class="m-tools" id="mTools"></div>
+    <div class="m-block"><div class="h">Problem</div><p id="mProblem"></p></div>
+    <div class="m-block"><div class="h">Approach</div><p id="mApproach"></p></div>
+    <div class="m-block"><div class="h">Artifacts</div><p id="mArtifacts"></p></div>
+    <div class="m-block out"><div class="h">Outcome</div><p id="mOutcome"></p></div>
+    <div class="m-actions" id="mActions"></div>
+  </div>
+</div>
+
+<script>
+  // ---- Replaceable links (edit these to your real handles) ----
+  const GITHUB_USER = "https://github.com/williams-ngo";
+
+  const projects = [
+    { code:"BI-01", cat:"bi", catLabel:"BI & Data", title:"NYC Taxi Demand Analysis", tools:["Microsoft Azure","Machine Learning","Python"],
+      blurb:"ML models on Azure over 2019 NYC TLC trip data — pitched to Microsoft.",
+      problem:"Understand and predict NYC taxi trip-demand patterns from a large public dataset to support operational decision-making.",
+      approach:"Cleaned and modelled the 2019 NYC TLC trip dataset, engineered features, then built and evaluated machine-learning models on Microsoft Azure.",
+      artifacts:"Azure ML pipeline, model-evaluation charts and a documented notebook.",
+      outcome:"Awarded the highest grade in the cohort; the team's solution was selected to be pitched to Microsoft.",
+      github:"/nyc-tlc-ml" },
+    { code:"BI-02", cat:"bi", catLabel:"BI & Data", title:"The Party Expert — Database Build", tools:["MySQL","Orange","ERD"],
+      blurb:"A complete relational database built from scratch for a simulated event company.",
+      problem:"A simulated event-management company had no data foundation — everything had to be designed and built from zero.",
+      approach:"Designed the relational schema (ERD), implemented it in MySQL, populated the data, and ran exploratory analysis in Orange.",
+      artifacts:"Entity-relationship diagram, SQL build scripts and an Orange analysis workflow.",
+      outcome:"A complete, working relational database supporting event operations and reporting.",
+      github:"/the-party-expert-db" },
+    { code:"BI-03", cat:"bi", catLabel:"BI & Data", title:"TravelSpare — Airbnb BI Dashboard", tools:["Tableau Prep","Tableau","AI Text Analysis"],
+      blurb:"Interactive Tableau dashboard on real Airbnb data, with AI-assisted text analysis.",
+      problem:"TravelSpare (a simulated company using real Airbnb data) needed insight to solve a defined business problem.",
+      approach:"Cleaned and modelled the data in Tableau Prep, applied AI-assisted text analysis to reviews, and built an interactive Tableau dashboard.",
+      artifacts:"Tableau Prep flow and a published interactive Tableau dashboard (embed on Tableau Public).",
+      outcome:"A decision-ready dashboard surfacing the patterns behind the business question.",
+      github:"/travelspare-tableau" },
+    { code:"BI-04", cat:"bi", catLabel:"BI & Data", title:"My Location — End-to-End BI Proposal", tools:["BI Architecture","KPI Design","Prototype"],
+      blurb:"End-to-end BI solution and prototype for a simulated real-estate company.",
+      problem:"A simulated real-estate company needed an end-to-end business intelligence capability.",
+      approach:"Designed the data architecture, defined the KPIs and dashboard structure, and built an interactive prototype (proposal stage, ahead of live data connection).",
+      artifacts:"BI solution proposal and an interactive dashboard prototype.",
+      outcome:"A clear, implementation-ready BI blueprint from data source to dashboard.",
+      github:"/my-location-bi" },
+    { code:"BA-01", cat:"ba", catLabel:"BA & Delivery", title:"OzResearch App — Requirements to Prototype", tools:["UML","User Stories","UAT","3 Sprints"],
+      blurb:"Full BA lifecycle across three sprints — from requirements to a working prototype.",
+      problem:"Translate stakeholder needs for the OzResearch app into a clear, buildable solution.",
+      approach:"Across three sprints, produced UML models, user stories and AS-IS/TO-BE flows with a UAT plan, progressing to a working prototype.",
+      artifacts:"UML diagram set, product backlog / user stories, UAT plan and a prototype.",
+      outcome:"A complete requirements-to-prototype delivery demonstrating end-to-end BA practice." },
+    { code:"BA-02", cat:"ba", catLabel:"BA & Delivery", title:"Software / System Deconstruction (UML)", tools:["UML","Use Case","Class","State Machine"],
+      blurb:"Individual project (50%) modelling a system's architecture and behaviour in UML.",
+      problem:"Document the architecture and behaviour of an existing system clearly enough to reason about and extend it.",
+      approach:"Deconstructed the system into a coherent set of UML models — use case, class and state-machine diagrams.",
+      artifacts:"A complete UML model set documenting structure and behaviour.",
+      outcome:"Individual project weighted at 50% — a precise, build-ready system specification." },
+    { code:"BA-03", cat:"ba", catLabel:"BA & Delivery", title:"Urban Future Research Centre — Project Proposal", tools:["MS Project","Agile","Evaluation"],
+      blurb:"Full project plan with Agile stand-ups and a Project Evaluation Report.",
+      problem:"Plan and govern a research-centre project from initiation through to evaluation.",
+      approach:"Built a full project plan with schedule and resourcing in MS Project, ran Agile stand-ups, and produced a Project Evaluation Report.",
+      artifacts:"MS Project Gantt plan, stand-up artifacts and a Project Evaluation Report.",
+      outcome:"An end-to-end project proposal — planned, sequenced and evaluated." },
+    { code:"RG-01", cat:"rg", catLabel:"Risk & Governance", title:"Bluebird Advisory — Digital Risk Proposal", tools:["Risk Analysis","Risk Calculation"],
+      blurb:"Risk analysis with quantitative scoring and treatment recommendations.",
+      problem:"Assess the digital-risk exposure of Bluebird Advisory and recommend how to treat it.",
+      approach:"Conducted a structured risk analysis with quantitative risk calculation, then prioritised treatment recommendations.",
+      artifacts:"Risk matrix and a digital-risk analysis report.",
+      outcome:"A prioritised set of risk-treatment recommendations the business can act on." },
+    { code:"RG-02", cat:"rg", catLabel:"Risk & Governance", title:"SafeLife HomeCare — Securing Smart Aged Care", tools:["BCP","Cybersecurity","IoT","Research"],
+      blurb:"A Business Continuity Plan addressing cybersecurity risk in IoT aged care.",
+      problem:"Smart, IoT-enabled aged-care systems face cybersecurity threats that put service continuity at risk.",
+      approach:"Researched the threat landscape for smart aged-care systems and developed a Business Continuity Plan (BCP) in response.",
+      artifacts:"Research findings and a structured Business Continuity Plan.",
+      outcome:"An actionable BCP that keeps critical aged-care services running through cyber disruption." }
+  ];
+
+  const grid = document.getElementById('grid');
+  function render(filter){
+    grid.innerHTML = '';
+    projects.filter(p => filter==='all' || p.cat===filter).forEach(p => {
+      const tools = p.tools.slice(0,3).map(t=>`<span class="tag">${t}</span>`).join('');
+      const gh = p.github ? `<a class="gh" href="${GITHUB_USER}${p.github}" target="_blank" rel="noopener" onclick="event.stopPropagation()">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.7.5.5 5.7.5 12c0 5.1 3.3 9.4 7.9 10.9.6.1.8-.2.8-.5v-2c-3.2.7-3.9-1.4-3.9-1.4-.5-1.3-1.3-1.7-1.3-1.7-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.7 1.3 3.4 1 .1-.8.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.8 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0C17.3 4.7 18.3 5 18.3 5c.6 1.6.2 2.8.1 3.1.8.8 1.2 1.8 1.2 3.1 0 4.5-2.7 5.5-5.3 5.8.4.4.8 1.1.8 2.2v3.3c0 .3.2.6.8.5 4.6-1.5 7.9-5.8 7.9-10.9C23.5 5.7 18.3.5 12 .5z"/></svg>Code</a>` : '';
+      const card = document.createElement('article');
+      card.className = 'card';
+      card.tabIndex = 0;
+      card.setAttribute('role','button');
+      card.innerHTML = `
+        <div class="card-top">
+          <span class="pcode ${p.cat}">${p.code}</span>
+          <span class="cat-pill">${p.catLabel}</span>
+        </div>
+        <h3>${p.title}</h3>
+        <p>${p.blurb}</p>
+        <div class="tags" style="margin-bottom:16px">${tools}</div>
+        <div class="card-actions">
+          <button class="link-cta">Case study →</button>
+          ${gh}
+        </div>`;
+      const open = ()=>openModal(p);
+      card.querySelector('.link-cta').addEventListener('click',(e)=>{e.stopPropagation();open();});
+      card.addEventListener('click',open);
+      card.addEventListener('keydown',(e)=>{ if(e.key==='Enter'||e.key===' '){e.preventDefault();open();} });
+      grid.appendChild(card);
+    });
+  }
+  render('all');
+
+  document.getElementById('filters').addEventListener('click', e=>{
+    const b = e.target.closest('.filter'); if(!b) return;
+    document.querySelectorAll('.filter').forEach(f=>f.classList.remove('active'));
+    b.classList.add('active');
+    render(b.dataset.f);
+  });
+
+  // ---- Modal ----
+  const back = document.getElementById('modalBack');
+  function openModal(p){
+    document.getElementById('mCode').textContent = p.code + ' · ' + p.catLabel;
+    document.getElementById('mTitle').textContent = p.title;
+    document.getElementById('mTools').innerHTML = p.tools.map(t=>`<span class="tag">${t}</span>`).join('');
+    document.getElementById('mProblem').textContent = p.problem;
+    document.getElementById('mApproach').textContent = p.approach;
+    document.getElementById('mArtifacts').textContent = p.artifacts;
+    document.getElementById('mOutcome').textContent = p.outcome;
+    document.getElementById('mActions').innerHTML = p.github
+      ? `<a class="btn small" href="${GITHUB_USER}${p.github}" target="_blank" rel="noopener">View code on GitHub</a><a class="btn ghost small" href="#contact" onclick="closeModal()">Ask me about it</a>`
+      : `<a class="btn ghost small" href="#contact" onclick="closeModal()">Ask me about it</a>`;
+    back.classList.add('open');
+    document.body.style.overflow='hidden';
+  }
+  function closeModal(){ back.classList.remove('open'); document.body.style.overflow=''; }
+  window.closeModal = closeModal;
+  document.getElementById('modalClose').addEventListener('click', closeModal);
+  back.addEventListener('click', e=>{ if(e.target===back) closeModal(); });
+  document.addEventListener('keydown', e=>{ if(e.key==='Escape') closeModal(); });
+
+  // ---- Mobile nav ----
+  const burger = document.getElementById('burger');
+  const navlinks = document.getElementById('navlinks');
+  burger.addEventListener('click', ()=>{
+    const open = navlinks.classList.toggle('show');
+    burger.setAttribute('aria-expanded', open);
+  });
+  navlinks.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>navlinks.classList.remove('show')));
+
+  // ---- Reveal on scroll ----
+  const io = new IntersectionObserver((entries)=>{
+    entries.forEach(en=>{ if(en.isIntersecting){ en.target.classList.add('in'); io.unobserve(en.target);} });
+  },{threshold:.12});
+  document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+
+  document.getElementById('yr').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
