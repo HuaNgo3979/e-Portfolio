@@ -37,44 +37,23 @@
 
 ## 📊 Featured projects
 
-Each folder contains its own README (Problem → Approach → Artefacts → Outcome), code/notebooks or documents, and screenshots. Live dashboards open on Tableau Public.
+Each folder has its own README (Problem → Approach → Artefacts → Outcome), with code/notebooks or documents and screenshots.
 
-### Business Intelligence & Data
+| # | Project Name | Domain | Purpose | Method | Tools Used |
+|---|---|---|---|---|---|
+| 1 | 🚕 [NYC Taxi (TLC) Demand Analysis](./NYC-TLC-ML-Azure) | BI & Data | Forecast NYC taxi trip demand from a large public dataset to support operational planning | Feature engineering and ML model training & evaluation on Azure over the 2019 TLC dataset | `Azure ML` · `Python` · `Machine Learning` |
+| 2 | 🏠 [TravelSpare — Airbnb BI Dashboard](./TravelSpare-Airbnb-Dashboard) | BI & Data | Surface the drivers behind a defined sentiment question using real Airbnb data | Data prep in Tableau Prep, AI-assisted review text analysis, interactive dashboard design | `Tableau Prep` · `Tableau` · `AI Text Analysis` |
+| 3 | 🗺️ [My Location — End-to-End BI Proposal](./My-Location-End-to-End-BI) | BI & Data | Define an implementation-ready BI capability for a simulated real-estate company | Data architecture, KPI framework and dashboard design delivered with an interactive prototype | `BI Architecture` · `KPI Design` · `Prototyping` |
+| 4 | 🎉 [The Party Expert — Database Build](./The-Party-Expert-Database) | BI & Data | Build a data foundation from scratch for a simulated event-management company | ERD and relational schema design, data population, and exploratory analysis | `MySQL` · `Orange` · `ERD` |
+| 5 | 📱 [OzResearch App — Requirements to Prototype](./OzResearch-Requirements-to-Prototype) | BA & Delivery | Convert stakeholder needs into a buildable, validated solution | UML modelling, user stories and AS-IS/TO-BE flows with UAT, across three Agile sprints | `UML` · `User Stories` · `UAT` · `Agile` |
+| 6 | 🧩 [System Deconstruction (UML)](./System-Deconstruction-UML) | BA & Delivery | Document an existing system's architecture and behaviour clearly enough to extend it | Use case, class and state-machine modelling | `UML` · `Use Case` · `Class` · `State Machine` |
+| 7 | 📅 [Urban Future — Project Proposal](./Urban-Future-Project-Proposal) | BA & Delivery | Plan and govern a research-centre project from initiation through to evaluation | Schedule and resource planning in MS Project, Agile stand-ups, and a project evaluation | `MS Project` · `Agile` · `Evaluation` |
+| 8 | 🛡️ [Bluebird Advisory — Digital Risk Proposal](./Bluebird-Digital-Risk) | Risk & Governance | Assess digital-risk exposure and recommend prioritised treatments | Qualitative analysis with quantitative risk scoring and treatment prioritisation | `Risk Matrix` · `Risk Calculation` |
+| 9 | 🏥 [SafeLife HomeCare — Securing Smart Aged Care](./SafeLife-HomeCare-BCP) | Risk & Governance | Protect service continuity in IoT-enabled aged care against cyber threats | Threat-landscape research and Business Continuity Plan development | `BCP` · `Cybersecurity` · `IoT` |
 
-**🚕 [NYC Taxi (TLC) Demand Analysis](./NYC-TLC-ML-Azure)** — `Azure ML` · `Python` · `Machine Learning`
-Built and evaluated machine-learning models on Microsoft Azure over the 2019 NYC TLC trip dataset to predict trip-demand patterns. *Awarded the highest grade in the cohort; the team's solution was selected to be pitched to Microsoft.*
-
-**🏠 [TravelSpare — Airbnb BI Dashboard](./TravelSpare-Airbnb-Dashboard)** — `Tableau Prep` · `Tableau` · `AI Text Analysis`
-Cleaned and modelled real Airbnb data in Tableau Prep, applied AI-assisted text analysis to reviews, and built an interactive dashboard answering a defined sentiment-analysis question.
-▶️ **Live dashboard:** ‹TODO: Tableau Public link›
-
-[![TravelSpare dashboard preview](./assets/travelspare-preview.png)](https://public.tableau.com/ "‹TODO: replace with your Tableau Public viz URL›")
-<sub>↑ Click the image to open the interactive dashboard on Tableau Public.</sub>
-
-**🗺️ ["My Location" — End-to-End BI Proposal & Prototype](./My-Location-End-to-End-BI)** — `BI Architecture` · `KPI Design` · `Prototype`
-Designed an end-to-end BI solution for a simulated real-estate company — data architecture, KPI framework and dashboard structure — delivered as a proposal with an interactive prototype.
-
-**🎉 [The Party Expert — Database Build](./The-Party-Expert-Database)** — `MySQL` · `Orange` · `ERD`
-Designed and built a complete relational database from scratch for a simulated event-management company: ERD, schema, data population and exploratory analysis in Orange.
-
-### Business Analysis & Delivery
-
-**📱 [OzResearch App — Requirements to Prototype](./OzResearch-Requirements-to-Prototype)** — `UML` · `User Stories` · `UAT` · `Agile (3 sprints)`
-Took the OzResearch app from stakeholder needs to a working prototype across three sprints: UML models, user stories, AS-IS/TO-BE flows and a UAT plan.
-
-**🧩 [Software / System Deconstruction (UML)](./System-Deconstruction-UML)** — `UML` · `Use Case` · `Class` · `State Machine`
-Deconstructed an existing software system into a coherent UML model set documenting structure and behaviour. *Individual project weighted at 50%.*
-
-**📅 [Urban Future Research Centre — Project Proposal](./Urban-Future-Project-Proposal)** — `MS Project` · `Agile` · `Evaluation`
-Full project plan with schedule and resourcing in MS Project, Agile stand-ups, and a Project Evaluation Report — initiation through to evaluation.
-
-### Risk & Governance
-
-**🛡️ [Bluebird Advisory — Digital Risk Proposal](./Bluebird-Digital-Risk)** — `Risk Analysis` · `Quantitative Risk Calculation`
-Structured digital-risk analysis with quantitative scoring and a prioritised set of treatment recommendations.
-
-**🏥 [SafeLife HomeCare — Securing Smart Aged Care](./SafeLife-HomeCare-BCP)** — `BCP` · `Cybersecurity` · `IoT`
-Researched the cybersecurity threat landscape for IoT-enabled aged-care systems and developed a Business Continuity Plan to protect service continuity.
+**🏆 Highlights**
+- **NYC Taxi (TLC) Demand Analysis** — awarded the highest grade in the cohort; team solution selected to be pitched to Microsoft.
+- **System Deconstruction (UML)** — individual project weighted at 50%.
 
 ---
 
