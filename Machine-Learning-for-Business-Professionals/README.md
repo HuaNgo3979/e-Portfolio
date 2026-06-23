@@ -6,7 +6,7 @@ All figures/metrics below come from the author's own submitted RMIT coursework.
 
 # NYC Taxi & Limousine Commission (TLC) Project - `ISYS3466` Data-Driven Decision Making: Machine Learning for Business Professionals
 
-A journey across the full applied-ML lifecycle: first applying supervised and unsupervised models in **Microsoft Azure ML** to comprehend ML models, then **designing** a data-science solution proposal for NYC TLC, and finally **implementing and presenting** a production-grade fare-prediction model to the Microsoft team.
+A journey across the full applied-ML lifecycle: first applying supervised and unsupervised models in **Microsoft Azure ML** to comprehend ML models, then **designing** a data-science solution proposal for NYC TLC (Read case study **[here](Asset/case-study)**), and finally **implementing and presenting** a production-grade fare-prediction model to the Microsoft team.
 
 🏆 **[Top Course Grade](Asset/top-course-grade.png)** The team's NYC TLC solution was selected and pitched to **[Microsoft Team](Asset/top-6-selected-team.png)**.
 
@@ -20,10 +20,10 @@ A journey across the full applied-ML lifecycle: first applying supervised and un
 
 ## Table of Contents
 | Assessment | Focus | Format | Folder |
-|---|---|---|---|
-| **1. Azure AI Exercise** | Supervised classification + unsupervised clustering in Azure ML *(individual)* | Report | [`./Assessment-1-Azure-AI-Exercise`](./Assessment-1-Azure-AI-Exercise) |
-| **2. Solution Design Proposal** | Identify a data-science opportunity for NYC TLC and propose a solution *(team)* | Slide deck | [`./Assessment-2-Solution-Design`](./Assessment-2-Solution-Design) |
-| **3. Implementation Plan** | Build, evaluate and pitch a GBDT fare-prediction model *(team)* | Report + deck | [`./Assessment-3-Implementation`](./Assessment-3-Implementation) |
+|---|---|:---:|:---:|
+| **1. Azure AI Exercise** | Supervised classification + unsupervised clustering in Azure ML *(Individual)* | Report | [Assessment1](./Assessment-1-Azure-AI-Exercise) |
+| **2. Business opportunity identification and solution design** | Identify a data-science opportunity for NYC TLC and propose a solution design *(Team)* | Slide deck | [Assessment2](./Assessment-2-Solution-Design) |
+| **3. Project Implementation and Executive Presentation** | Build, evaluate and pitch a GBDT fare-prediction model integrated into NYC TLC's dispatcher system and driver app *(Team)* | Slide deck & Report | [Assessment3](./Assessment-3-Implementation) |
 
 
 ## Tools <a id="tools"></a>
