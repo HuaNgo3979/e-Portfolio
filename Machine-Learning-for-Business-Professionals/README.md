@@ -6,24 +6,24 @@ All figures/metrics below come from the author's own submitted RMIT coursework.
 
 # NYC Taxi & Limousine Commission (TLC) Project - `ISYS3466` Data-Driven Decision Making: Machine Learning for Business Professionals
 
-A three-assessment journey across the full applied-ML lifecycle: first applying supervised and unsupervised models in **Microsoft Azure ML**, then **designing** a data-science solution for NYC TLC, and finally **implementing and presenting** a production-grade fare-prediction model to an executive audience.
+A journey across the full applied-ML lifecycle: first applying supervised and unsupervised models in **Microsoft Azure ML** to comprehend ML models, then **designing** a data-science solution proposal for NYC TLC, and finally **implementing and presenting** a production-grade fare-prediction model to the Microsoft team.
 
+🏆 **[Top Course Grade](Asset/top-course-grade.png)** The team's NYC TLC solution was selected and pitched to **[Microsoft Team](Asset/top-6-selected-team.png)**.
 
-🏆 **Top course grade.** The team's NYC TLC solution (Assessments 2 &amp; 3) was selected and pitched to **Microsoft team**.
-> <!-- evidence: add certificate / award screenshot link here --> 
+**[Certification](Asset/CoA.png)**: Certification of Archievement - Exceptional efforts and insightful presentation showcasing your expertise in designing and implementing effective data science solutions for business scenarios
 
-**Team:** *Gradient Minds — Team 4* · **My role:** Business Intelligence Analyst/ Data Science Engineer
-<sub>Teammate credits omitted from this public README for privacy; available on request.</sub>
+**Team:** Gradient Minds - Team 4 
+
+**My role:** Business Intelligence Analyst/ Machine Learning Specialist
 
 ---
 
-## 📂 Contents
-
+## Table of Contents
 | Assessment | Focus | Format | Folder |
 |---|---|---|---|
-| **1 — Azure AI Exercise** | Supervised classification + unsupervised clustering in Azure ML *(individual)* | Report | [`./Assessment-1-Azure-AI-Exercise`](./Assessment-1-Azure-AI-Exercise) |
-| **2 — Solution Design** | Identify a data-science opportunity for NYC TLC and propose a solution *(team)* | Slide deck | [`./Assessment-2-Solution-Design`](./Assessment-2-Solution-Design) |
-| **3 — Implementation** | Build, evaluate and pitch a GBDT fare-prediction model *(team)* | Report + deck | [`./Assessment-3-Implementation`](./Assessment-3-Implementation) |
+| **1. Azure AI Exercise** | Supervised classification + unsupervised clustering in Azure ML *(individual)* | Report | [`./Assessment-1-Azure-AI-Exercise`](./Assessment-1-Azure-AI-Exercise) |
+| **2. Solution Design Proposal** | Identify a data-science opportunity for NYC TLC and propose a solution *(team)* | Slide deck | [`./Assessment-2-Solution-Design`](./Assessment-2-Solution-Design) |
+| **3. Implementation Plan** | Build, evaluate and pitch a GBDT fare-prediction model *(team)* | Report + deck | [`./Assessment-3-Implementation`](./Assessment-3-Implementation) |
 
 
 ## Tools <a id="tools"></a>
@@ -37,7 +37,8 @@ A three-assessment journey across the full applied-ML lifecycle: first applying 
 ![Tableau](https://img.shields.io/badge/Tableau-FFFFFF?style=flat&logo=tableau&logoColor=black)
 
 **Models:** Multiclass Logistic Regression · Multiclass Decision Forest · K-Means · Gradient Boosted Decision Tree (Boosted Decision Tree Regression)
-**Techniques:** EDA · median/mode imputation · Z-score normalisation · Tukey IQR capping · stratified sampling · hyperparameter tuning · permutation feature importance · RMIT Harvard referencing
+
+**Techniques:** EDA · Median/Mode imputation · Z-score normalisation · Tukey IQR capping · Stratified sampling · Hyperparameter tuning · Permutation feature importance
 
 ---
 
