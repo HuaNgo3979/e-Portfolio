@@ -9,10 +9,8 @@ All figures/metrics below come from the author's own submitted RMIT coursework.
 A three-assessment journey across the full applied-ML lifecycle: first applying supervised and unsupervised models in **Microsoft Azure ML**, then **designing** a data-science solution for NYC TLC, and finally **implementing and presenting** a production-grade fare-prediction model to an executive audience.
 
 
-🏆 <span style="color:#D0871F;"><strong>Top course grade.</strong></span> The team's NYC TLC solution (Assessments 2 &amp; 3) was selected and pitched to <strong>Microsoft</strong>.
-
-
-> <!-- evidence: add certificate / award screenshot link here -->
+🏆 **Top course grade.** The team's NYC TLC solution (Assessments 2 &amp; 3) was selected and pitched to **Microsoft team**.
+> <!-- evidence: add certificate / award screenshot link here --> 
 
 **Team:** *Gradient Minds — Team 4* · **My role:** Business Intelligence Analyst/ Data Science Engineer
 <sub>Teammate credits omitted from this public README for privacy; available on request.</sub>
@@ -27,21 +25,16 @@ A three-assessment journey across the full applied-ML lifecycle: first applying 
 | **2 — Solution Design** | Identify a data-science opportunity for NYC TLC and propose a solution *(team)* | Slide deck | [`./Assessment-2-Solution-Design`](./Assessment-2-Solution-Design) |
 | **3 — Implementation** | Build, evaluate and pitch a GBDT fare-prediction model *(team)* | Report + deck | [`./Assessment-3-Implementation`](./Assessment-3-Implementation) |
 
-```
-Machine-Learning-for-Business-Professionals/
-├── Assessment-1-Azure-AI-Exercise/   report/ · data/ · azure-pipeline/
-├── Assessment-2-Solution-Design/     deck/ · data/ · tableau/ · assets/
-└── Assessment-3-Implementation/      report/ · deck/ · data/ · tableau-prep/ · python/ · azure-pipeline/ · dashboards/
-```
 
-## 🧰 Tools <a id="tools"></a>
+## Tools <a id="tools"></a>
 
 ![Azure ML](https://img.shields.io/badge/Azure_Machine_Learning-0078D4?style=flat&logo=microsoftazure&logoColor=white)
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
 ![Pandas](https://img.shields.io/badge/Pandas-150458?style=flat&logo=pandas&logoColor=white)
 ![NumPy](https://img.shields.io/badge/NumPy-013243?style=flat&logo=numpy&logoColor=white)
 ![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=flat&logo=jupyter&logoColor=white)
-![Tableau](https://img.shields.io/badge/Tableau-E97627?style=flat&logo=tableau&logoColor=white)
+![Tableau Prep](https://img.shields.io/badge/TableauPrep-538A9C?style=flat&logo=tableauprep&logoColor=white)
+![Tableau](https://img.shields.io/badge/Tableau-FFFFFF?style=flat&logo=tableau&logoColor=black)
 
 **Models:** Multiclass Logistic Regression · Multiclass Decision Forest · K-Means · Gradient Boosted Decision Tree (Boosted Decision Tree Regression)
 **Techniques:** EDA · median/mode imputation · Z-score normalisation · Tukey IQR capping · stratified sampling · hyperparameter tuning · permutation feature importance · RMIT Harvard referencing
