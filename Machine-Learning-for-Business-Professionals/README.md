@@ -12,7 +12,7 @@ A journey across the full applied-ML lifecycle: first applying supervised and un
 
 **[Certification](Asset/CoA.png)**: Certification of Archievement - Exceptional efforts and insightful presentation showcasing your expertise in designing and implementing effective data science solutions for business scenarios
 
-**Team:** Gradient Minds - Team 4 
+**Team:** Gradient Minds / Team 4 - Section 2
 
 **My role:** Business Intelligence Analyst/ Machine Learning Specialist
 
