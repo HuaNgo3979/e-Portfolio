@@ -6,7 +6,7 @@ All figures/metrics below come from the author's own submitted RMIT coursework.
 
 # NYC Taxi & Limousine Commission (TLC) Project - `ISYS3466` Data-Driven Decision Making: Machine Learning for Business Professionals
 
-A journey across the full applied-ML lifecycle: first applying supervised and unsupervised models in **Microsoft Azure ML** to comprehend ML models, then **designing** a data-science solution proposal for NYC TLC (Read case study **[here](Asset/case-study)**), and finally **implementing and presenting** a production-grade fare-prediction model to the Microsoft team.
+A journey across the full applied-ML lifecycle: first applying supervised and unsupervised models in **Microsoft Azure ML** to comprehend ML models, then **designing** a data-science solution proposal for NYC TLC (Read case study **[here](Asset/case-study.md)**), and finally **implementing and presenting** a production-grade fare-prediction model to the Microsoft team.
 
 🏆 **[Top Course Grade](Asset/top-course-grade.png)** The team's NYC TLC solution was selected and pitched to **[Microsoft Team](Asset/top-6-selected-team.png)**.
 
