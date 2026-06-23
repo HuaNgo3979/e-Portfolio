@@ -4,16 +4,17 @@ Privacy: this is a PUBLIC repo. Teammates' names and student IDs are intentional
 All figures/metrics below come from the author's own submitted RMIT coursework.
 -->
 
-# Machine Learning for Business Professionals — `ISYS3466`
+# NYC Taxi & Limousine Commission (TLC) Project - `ISYS3466` Data-Driven Decision Making: Machine Learning for Business Professionals
 
-**RMIT University · Master of Business Information Technology · Semester A (2026)**
+A three-assessment journey across the full applied-ML lifecycle: first applying supervised and unsupervised models in **Microsoft Azure ML**, then **designing** a data-science solution for NYC TLC, and finally **implementing and presenting** a production-grade fare-prediction model to an executive audience.
 
-A three-assessment journey across the full applied-ML lifecycle: first applying supervised and unsupervised models in **Microsoft Azure ML**, then **designing** a data-science solution for the New York City taxi industry, and finally **implementing and presenting** a production-grade fare-prediction model to an executive audience.
 
-> 🏆 **Top course grade.** The team's NYC TLC solution (Assessments 2 & 3) was selected and pitched to **Microsoft**.
+🏆 <span style="color:#D0871F;"><strong>Top course grade.</strong></span> The team's NYC TLC solution (Assessments 2 &amp; 3) was selected and pitched to <strong>Microsoft</strong>.
+
+
 > <!-- evidence: add certificate / award screenshot link here -->
 
-**Team:** *Gradient Minds — Team 4* · **My role:** Business Intelligence Analyst
+**Team:** *Gradient Minds — Team 4* · **My role:** Business Intelligence Analyst/ Data Science Engineer
 <sub>Teammate credits omitted from this public README for privacy; available on request.</sub>
 
 ---
