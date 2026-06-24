@@ -57,7 +57,7 @@ A journey across the full applied-ML lifecycle: first applying supervised and un
 ### 1. Data used
 | Dataset | Source | Info | Shape | Download | In repo |
 |:---:|:---:|:---:|---|---|---|
-| Cell Phone Price | Kaggle | [CellPhone Data Source and Description](https://www.kaggle.com/datasets/atefehmirnaseri/cell-phone-price) | · 2,000 train / 1,000 test <br> · 20 predictors + `price_range` (4 balanced classes) <br> | [CellPhone_train_dataset.csv](./Assessment-1-Azure-AI-Exercise/CellPhone_train_dataset.csv) <br> [CellPhone_test_dataset.csv]() <br>| ‹TODO: `./Assessment-1-Azure-AI-Exercise/data/…`› |
+| Cell Phone Price | Kaggle | [CellPhone Data Source and Description](https://www.kaggle.com/datasets/atefehmirnaseri/cell-phone-price) | · 2,000 train / 1,000 test <br> · 20 predictors + `price_range` (4 balanced classes) <br> | [CellPhone_train_dataset.csv](./Assessment-1-Azure-AI-Exercise/CellPhone_data_train.csv) <br> [CellPhone_test_dataset.csv]() <br>| ‹TODO: `./Assessment-1-Azure-AI-Exercise/data/…`› |
 | Wine | UCI ML Repository | [Wine Data Source and Description](https://archive.ics.uci.edu/dataset/109/wine) | 178 obs · 14 variables (13 chemical + class) | [UCI](https://archive.ics.uci.edu/dataset/109/wine) | ‹TODO: `…/data/…`› |
 
 ### 2. Method / Techniques
