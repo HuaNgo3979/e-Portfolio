@@ -6,6 +6,8 @@ All figures/metrics below come from the author's own submitted RMIT coursework.
 
 # NYC Taxi & Limousine Commission (TLC) Project - `ISYS3466` Data-Driven Decision Making: Machine Learning for Business Professionals
 
+<div align="justify">
+
 A journey across the full applied-ML lifecycle: first applying supervised and unsupervised models in **Microsoft Azure ML** to comprehend ML models, then **designing** a data-science solution proposal for NYC TLC (Read case study **[here](Asset/case-study.md)**), and finally **implementing and presenting** a production-grade fare-prediction model to the Microsoft team.
 
 🏆 **[Top Course Grade](Asset/top-course-grade.png)** The team's NYC TLC solution was selected and pitched to **[Microsoft Team](Asset/top-6-selected-team.png)**.
@@ -15,6 +17,8 @@ A journey across the full applied-ML lifecycle: first applying supervised and un
 **Team:** Gradient Minds / Team 4 - Section 2
 
 **My role:** Business Intelligence Analyst/ Machine Learning Specialist
+
+</div>
 
 ---
 
@@ -42,15 +46,19 @@ A journey across the full applied-ML lifecycle: first applying supervised and un
 
 ---
 
-# Assessment 1 — Azure AI Exercise
+# Assessment 1 - Azure AI Exercise
 
-**Summary.** An individual exercise applying machine learning end-to-end in Azure ML across two business scenarios: a **supervised** cell-phone price-category classifier and an **unsupervised** wine-segmentation clustering model.
+<div align="justify">
+
+**Summary:** An individual exercise applying machine learning end-to-end in Microsoft Azure ML across two business scenarios: a **supervised** cell phone price-categorised prediction model and an **unsupervised** wine-segmentation clustering model.
+
+</div>
 
 ### 1. Data used
-| Dataset | Source | Shape | Download | In repo |
-|---|---|---|---|---|
-| Cell Phone Price | Kaggle | 2,000 train / 1,000 test · 20 predictors + `price_range` (4 balanced classes) | [Kaggle](https://www.kaggle.com/datasets/atefehmirnaseri/cell-phone-price) | ‹TODO: `./Assessment-1-Azure-AI-Exercise/data/…`› |
-| Wine | UCI ML Repository | 178 obs · 14 variables (13 chemical + class) | [UCI](https://archive.ics.uci.edu/dataset/109/wine) | ‹TODO: `…/data/…`› |
+| Dataset | Source | Info | Shape | Download | In repo |
+|:---:|:---:|:---:|---|---|---|
+| Cell Phone Price | Kaggle | [CellPhone Data Source and Description](https://www.kaggle.com/datasets/atefehmirnaseri/cell-phone-price) | · 2,000 train / 1,000 test <br> · 20 predictors + `price_range` (4 balanced classes) <br> | [Kaggle](https://www.kaggle.com/datasets/atefehmirnaseri/cell-phone-price) | ‹TODO: `./Assessment-1-Azure-AI-Exercise/data/…`› |
+| Wine | UCI ML Repository | [Wine Data Source and Description](https://archive.ics.uci.edu/dataset/109/wine) | 178 obs · 14 variables (13 chemical + class) | [UCI](https://archive.ics.uci.edu/dataset/109/wine) | ‹TODO: `…/data/…`› |
 
 ### 2. Method / Techniques
 - **Preparation (Azure ML):** median imputation, Z-score normalisation (target excluded), 80/20 holdout split with fixed seed (123); for the test set, transformations learned on training data were re-applied to prevent leakage.
