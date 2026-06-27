@@ -55,10 +55,10 @@ A journey across the full applied-ML lifecycle: first applying supervised and un
 </div>
 
 ### 1. Data used
-| Dataset | Source | Info | Shape | Download | In repo |
-|:---:|:---:|:---:|---|:---:|:---:|
-| Cell Phone Price | Kaggle | [CellPhone Data Source and Description](https://www.kaggle.com/datasets/atefehmirnaseri/cell-phone-price) | · 2,000 train / 1,000 test <br> · 20 predictors + `price_range` (4 balanced classes) <br> | [CellPhone_train_dataset.csv](./Assessment-1-Azure-AI-Exercise/CellPhone_data_train.csv) <br> [CellPhone_test_dataset.csv](./Assessment-1-Azure-AI-Exercise/CellPhone_data_test.csv) <br>| ‹TODO: `./Assessment-1-Azure-AI-Exercise/…`› |
-| Wine | UCI ML Repository | [Wine Data Source and Description](https://archive.ics.uci.edu/dataset/109/wine) | 178 obs · 14 variables (13 chemical + class) | [Wine_data](./Assessment-1-Azure-AI-Exercise/Wine_data) | ‹TODO: `./Assessment-1-Azure-AI-Exercise/…`› |
+| Dataset | Source | Info | Shape | Download in Repo |
+|:---:|:---:|:---:|---|:---:|
+| Cell Phone Price | Kaggle | [CellPhone Data Source and Description](https://www.kaggle.com/datasets/atefehmirnaseri/cell-phone-price) | · 2,000 train / 1,000 test <br> · 20 predictors + `price_range` (4 balanced classes) <br> | [CellPhone_train_dataset.csv](./Assessment-1-Azure-AI-Exercise/CellPhone_data_train.csv) <br> [CellPhone_test_dataset.csv](./Assessment-1-Azure-AI-Exercise/CellPhone_data_test.csv) <br>|
+| Wine | UCI ML Repository | [Wine Data Source and Description](https://archive.ics.uci.edu/dataset/109/wine) | 178 obs · 14 variables (13 chemical + class) | [Wine_data](./Assessment-1-Azure-AI-Exercise/Wine_data) |
 
 ### 2. Method / Techniques
 - **Preparation (Azure ML):** median imputation, Z-score normalisation (target excluded), 80/20 holdout split with fixed seed (123); for the test set, transformations learned on training data were re-applied to prevent leakage.
